@@ -29,13 +29,19 @@ float calc_hours(int hours[], int weeks, char output)
 {
     int totalHours = 0;
 
+    for (int i = 0; i < weeks; i++) {
+        totalHours += hours^[i];
+    }
+
     switch (output):
         case "T":
-            
-            break;
+            //return total hours
+            return totalHours;
         case "A":
-            break:
+            //return average hours
+            return totalHours/weeks;
         default "":
             printf("Invalid input")
+            return -1;
 
 }
