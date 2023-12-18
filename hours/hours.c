@@ -21,7 +21,7 @@ int main(void)
     }
     while (output != 'T' && output != 'A');
 
-    printf("%.1f hours\n", calc_hours(hours, weeks, output));
+    printf("%.2f hours\n", calc_hours(hours, weeks, output));
 }
 
 // TODO: complete the calc_hours function
@@ -34,7 +34,7 @@ float calc_hours(int hours[], int weeks, char output)
     }
 
     if (output == 'A') {
-        return totalHours/weeks;
+        return totalHours/(float)weeks;
     } else {
         return totalHours;
     }
