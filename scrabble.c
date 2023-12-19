@@ -13,8 +13,11 @@ int main(void)
     string p1 = get_string("Player 1: ");
     string p2 = get_string("Player 2: ");
 
-    char p1_char_array[] = convert_input(p1);
-    char p2_char_array[] = convert_input(p2);
+    char p1_char_array[strlen(p1)];
+    char p2_char_array[strlen(p2)];
+
+    strcpy(p1_char_array, convert_input(p1));
+    strcpy(p2_char_array, convert_input(p2));
 
     int p1_score = compute_score(p1_char_array);
     int p2_score = compute_score(p2_char_array);
