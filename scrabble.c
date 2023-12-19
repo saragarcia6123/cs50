@@ -33,19 +33,31 @@ int main(void)
     return 0;
 }
 
-char[] convert_input(string input)
+char convert_input(string input)
 {
-    int input_length = 0;
+    int output_length = 0;
 
+    //get length of the string excluding invalid characters
     for (int i = 0; i < strlen(input); i++)
     {
-        if (isLetter(input[input_length])) {
-            input_length++;
+        if (is_letter(input[output_length])) {
+            output_length++;
         }
     }
 
-    char c[input_length] =
+    char output_array[output_length];
+    int char_index = 0;
 
+    //create the valid char array
+    for (int i = 0; i < strlen(input); i++)
+    {
+        char current_char = input[output_length];
+        if (is_letter(current_char))
+        {
+            output_array[char_index] = toupper(current_char);
+            char_index++;
+        }
+    }
 }
 
 bool is_letter(char c)
