@@ -9,7 +9,7 @@ int main(void)
     int start_size = 0;
     int end_size = 0;
 
-    while (start_size < 1)
+    while (start_size < 9)
     {
         start_size = get_int("Start size: ");
     }
