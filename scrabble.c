@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>
+#include <string.h>
 
 int compute_score(string word);
 char* convert_input(string input);
@@ -27,7 +28,7 @@ int main(void)
 
     if (p1_score > p2_score)
     {
-        prinf("Player 1 wins!");
+        printf("Player 1 wins!");
     }
     else {
         printf("Player 2 wins!");
@@ -48,7 +49,7 @@ char* convert_input(string input)
         }
     }
 
-    static char output_array[output_length];
+    char output_array[output_length];
     int char_index = 0;
 
     //create the valid char array
