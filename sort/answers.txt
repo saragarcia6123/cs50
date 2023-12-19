@@ -1,10 +1,10 @@
-sort1 uses: BUBBLE
+sort1 uses: SELECTION
+
+How do you know?: Performs the badly on the largest lists but well on the smallest lists.
+
+sort2 uses: BUBBLE
 
 How do you know?: Peforms the worst on both small and large lists
-
-sort2 uses: SELECTION
-
-How do you know?: Performs the worst on the largest lists but the best on the smallest lists.
 
 sort3 uses: MERGE
 
