@@ -2,6 +2,8 @@
 #include <cs50.h>
 #include <ctype.h>
 
+int calc_year_growth(int size);
+
 int main(void)
 {
 
@@ -10,14 +12,14 @@ int main(void)
 
     int years = 0;
 
-    do while (currentSize < endSize)
+    while (currentSize < endSize)
     {
-        currentSize = calcYearGrowth(currentSize);
+        currentSize = calc_year_growth(currentSize);
     }
 
 }
 
-int calcYearGrowth(int size)
+int calc_year_growth(int size)
 {
     int amountToAdd = size / 3;
     int amountToSubtract = size / 4;
