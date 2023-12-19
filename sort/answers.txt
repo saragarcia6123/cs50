@@ -1,6 +1,6 @@
-sort1 uses: TODO
+sort1 uses: BUBBLE
 
-How do you know?: TODO
+How do you know?: Takes the longest on average
 
 sort2 uses: TODO
 
