@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <ctype.h>
 
 int main(void)
 {
@@ -11,7 +12,7 @@ int main(void)
 
     do while (currentSize < endSize)
     {
-        currentSize = calcYearGrowth(currentSize)
+        currentSize = calcYearGrowth(currentSize);
     }
 
 }
