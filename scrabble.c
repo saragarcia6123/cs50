@@ -34,12 +34,22 @@ int main(void)
 
 char[] convert_input(string input)
 {
-    int inputLength = 0;
+    int input_length = 0;
 
-    for (inputLength < strlen(input); inputLength++)
+    for (int i = 0; i < strlen(input); i++)
     {
-        if (isLetterinput[inputLength])
+        if (isLetter(input[input_length])) {
+            input_length++;
+        }
     }
+
+
+
+}
+
+bool isLetter(char c)
+{
+    return (65 <= c <= 90) || (97 <= c <= 122)
 }
 
 int compute_score(char[] letters)
