@@ -16,8 +16,8 @@ int main(void)
     int p1_score = compute_score(p1);
     int p2_score = compute_score(p2);
 
-    printf("Player 1 score: %i", p1_score);
-    printf("Player 2 score: %i", p2_score);
+    printf("Player 1 score: %i\n", p1_score);
+    printf("Player 2 score: %i\n", p2_score);
 
     if (p1_score > p2_score)
     {
@@ -50,7 +50,6 @@ int compute_score(string input)
 
         if (is_letter(toupper(current_char)))
         {
-            printf("%c: %i", current_char, current_char);
             total += char_values[toupper(current_char) - 65];
         }
     }
