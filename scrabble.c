@@ -34,7 +34,12 @@ int main(void)
 
 char[] convert_input(string input)
 {
-    StringBuilder sb
+    int inputLength = 0;
+
+    for (inputLength < strlen(input); inputLength++)
+    {
+        if (isLetterinput[inputLength])
+    }
 }
 
 int compute_score(char[] letters)
