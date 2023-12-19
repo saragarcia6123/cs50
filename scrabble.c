@@ -38,8 +38,9 @@ bool is_letter(char c)
 int compute_score(string input)
 {
     int total = 0;
+    char array[] = input;
 
-    for (char c : input)
+    for_each_item(c : input)
     {
         if (is_letter(toupper(c)))
         {
