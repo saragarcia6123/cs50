@@ -2,24 +2,40 @@
 #include <ctype.h>
 #include <stdio.h>
 
-int calc_total(string word);
+int compute_score(string word);
 
-int[26] char_values = [1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10];
+int char_values[] = {1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10};
 
 int main(void)
 {
     string p1 = get_string("Player 1: ");
     string p2 = get_string("Player 2: ");
 
+    int p1_score = compute_score(toupper(p1));
+    int p2_score = compute_score(toupper(p2));
 
+    printf("Player 1 score: %i", p1_score);
+    printf("Player 2 score: %i", p2_score);
+
+    if (p1_score > p2_score)
+    {
+        prinf("Player 1 wins!");
+    }
+    else {
+        printf("Player 2 wins!");
+    }
+
+    return 0;
 }
 
-int calc_total(char[] letters)
+int compute_score(char[] letters)
 {
     int total = 0;
 
     for (char c : letters)
     {
-        total += char_values(c - )
+        total += char_values(c - 65);
     }
+
+    return total;
 }
