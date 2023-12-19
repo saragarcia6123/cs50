@@ -47,10 +47,10 @@ int compute_score(string input)
     for (int i = 0; i < strlen(input); i++)
     {
         char current_char = input[i];
-        printf("%c", current_char);
 
         if (is_letter(toupper(current_char)))
         {
+            printf("%c ", current_char);
             total += char_values[toupper(current_char - 65)];
         }
     }
