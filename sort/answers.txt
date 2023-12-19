@@ -2,10 +2,10 @@ sort1 uses: BUBBLE
 
 How do you know?: Takes the longest on both
 
-sort2 uses: MERGE
+sort2 uses: SELECTION
 
-How do you know?:
+How do you know?: Fastest on random, slowest on reversed. Performs better on smaller data sets.
 
-sort3 uses: SELECTION
+sort3 uses: MERGE
 
-How do you know?: Fastest on random, slowest on reversed
+How do you know?: Stable on both random and reversed. Performs worse on smaller data sets.
