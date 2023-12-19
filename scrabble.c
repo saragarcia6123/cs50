@@ -38,14 +38,13 @@ bool is_letter(char c)
 int compute_score(string input)
 {
     int total = 0;
-    char array[] = input;
 
-    for (i = 0; i < strlen(input); i++)
+    for (int i = 0; i < strlen(input); i++)
     {
         char current_char = input[i];
-        if (is_letter(toupper(current_char))
+        if (is_letter(toupper(current_char)))
         {
-            total += char_values(toupper(current_char - 65);
+            total += char_values[toupper(current_char - 65)];
         }
     }
 
