@@ -34,7 +34,7 @@ int main(void)
 
 char[] convert_input(string input)
 {
-    
+    StringBuilder sb
 }
 
 int compute_score(char[] letters)
