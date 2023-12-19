@@ -15,7 +15,10 @@ int main(void)
     while (currentSize < endSize)
     {
         currentSize = calc_year_growth(currentSize);
+        years++;
     }
+
+    printf("Years: %i\n", years);
 
 }
 
