@@ -1,6 +1,6 @@
 sort1 uses: BUBBLE
 
-How do you know?: Takes the longest on both
+How do you know?: Peforms the worst on both small and large lists
 
 sort2 uses: SELECTION
 
@@ -8,4 +8,4 @@ How do you know?: Performs the worst on the largest lists but the best on the sm
 
 sort3 uses: MERGE
 
-How do you know?: Stable on both random and reversed. Performs worse on smaller data sets.
+How do you know?: Consisten overall runtimes.
