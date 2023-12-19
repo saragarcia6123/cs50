@@ -32,7 +32,7 @@ int main(void)
 
 bool is_letter(char c)
 {
-    return ((65 <= c) && (c <= 90)) || ((97 <= c) (c <= 122));
+    return ((65 <= c) && (c <= 90)) || ((97 <= c) && (c <= 122));
 }
 
 int compute_score(string input)
