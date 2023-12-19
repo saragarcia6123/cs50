@@ -6,15 +6,24 @@ int calc_year_growth(int size);
 
 int main(void)
 {
+    int start_size = 0;
+    int end_size = 0;
 
-    int currentSize = get_int("Start size: ");
-    int endSize = get_int("End size: ");
+    while (start_size <=0)
+    {
+        start_size = get_int("Start size: ");
+    }
+
+    while(end_size <= start_size)
+    {
+        end_size = get_int("End size: ");
+    }
 
     int years = 0;
 
-    while (currentSize < endSize)
+    while (start_size < end_size)
     {
-        currentSize = calc_year_growth(currentSize);
+        start_size = calc_year_growth(start_size);
         years++;
     }
 
@@ -24,8 +33,8 @@ int main(void)
 
 int calc_year_growth(int size)
 {
-    int amountToAdd = size / 3;
-    int amountToSubtract = size / 4;
+    int amount_to_add = size / 3;
+    int amount_to_subtract = size / 4;
 
-    return size + amountToAdd - amountToSubtract;
+    return size + amount_to_add - amount_to_subtract;
 }
