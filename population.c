@@ -24,5 +24,5 @@ int calc_year_growth(int size)
     int amountToAdd = size / 3;
     int amountToSubtract = size / 4;
 
-    return previous + amountToAdd - amountToSubtract;
+    return size + amountToAdd - amountToSubtract;
 }
