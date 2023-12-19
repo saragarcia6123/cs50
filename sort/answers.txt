@@ -2,10 +2,10 @@ sort1 uses: BUBBLE
 
 How do you know?:
 
-sort2 uses: SELECTION
+sort2 uses: MERGE
 
 How do you know?:
 
-sort3 uses: MERGE
+sort3 uses: SELECTION
 
 How do you know?: Consistent and fastest overall runtimes.
