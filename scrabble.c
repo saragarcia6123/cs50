@@ -50,7 +50,7 @@ int compute_score(string input)
 
         if (is_letter(toupper(current_char)))
         {
-            printf("%c ", current_char);
+            printf("%c: %i", current_char, current_char);
             total += char_values[toupper(current_char - 65)];
         }
     }
