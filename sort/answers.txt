@@ -4,8 +4,8 @@ How do you know?: Performs the badly on the largest lists but well on the smalle
 
 sort2 uses: BUBBLE
 
-How do you know?: Peforms the worst on both small and large lists
+How do you know?: Overall worst performance across all types of list
 
 sort3 uses: MERGE
 
-How do you know?: Consisten overall runtimes.
+How do you know?: Consistent and fastest overall runtimes.
