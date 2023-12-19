@@ -40,11 +40,12 @@ int compute_score(string input)
     int total = 0;
     char array[] = input;
 
-    for_each_item(c : input)
+    for (i = 0; i < strlen(input); i++)
     {
-        if (is_letter(toupper(c)))
+        char current_char = input[i];
+        if (is_letter(toupper(current_char))
         {
-            total += char_values(toupper(c) - 65);
+            total += char_values(toupper(current_char - 65);
         }
     }
 
