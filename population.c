@@ -25,13 +25,6 @@ int main(void)
     {
         start_size = calc_year_growth(start_size);
         years++;
-
-        printf("%i", start_size);
-        printf("%i", end_size);
-
-        if (years > 1000) {
-            break;
-        }
     }
 
     printf("Years: %i\n", years);
