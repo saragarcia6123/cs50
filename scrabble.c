@@ -21,10 +21,15 @@ int main(void)
 
     if (p1_score > p2_score)
     {
-        printf("Player 1 wins!");
+        printf("Player 1 wins!\n");
     }
-    else {
-        printf("Player 2 wins!");
+    else if (p1_score < p2_score)
+    {
+        printf("Player 2 wins!\n");
+    }
+    else
+    {
+        printf("Tie!\n");
     }
 
     return 0;
@@ -42,6 +47,8 @@ int compute_score(string input)
     for (int i = 0; i < strlen(input); i++)
     {
         char current_char = input[i];
+        printf("%c", current_char);
+
         if (is_letter(toupper(current_char)))
         {
             total += char_values[toupper(current_char - 65)];
