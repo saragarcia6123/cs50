@@ -4,7 +4,7 @@ How do you know?: Takes the longest on both
 
 sort2 uses: SELECTION
 
-How do you know?: Fastest on random, slowest on reversed. Performs better on smaller data sets.
+How do you know?: Performs the worst on the largest lists but the best on the smallest lists.
 
 sort3 uses: MERGE
 
