@@ -14,7 +14,7 @@ int main(void)
         start_size = get_int("Start size: ");
     }
 
-    while (end_size <= start_size)
+    while (end_size < start_size)
     {
         end_size = get_int("End size: ");
     }
