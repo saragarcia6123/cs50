@@ -25,6 +25,9 @@ int main(void)
     {
         start_size = calc_year_growth(start_size);
         years++;
+
+        print(start_size)
+        print(end_size)
     }
 
     printf("Years: %i\n", years);
