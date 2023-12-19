@@ -4,8 +4,8 @@ How do you know?: Takes the longest on both
 
 sort2 uses: MERGE
 
+How do you know?:
+
+sort3 uses: SELECTION
+
 How do you know?: Fastest on random, slowest on reversed
-
-sort3 uses: TODO
-
-How do you know?: TODO
