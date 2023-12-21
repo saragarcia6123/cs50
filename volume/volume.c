@@ -35,7 +35,12 @@ int main(int argc, char *argv[])
 
     // TODO: Copy header from input file to output file
 
-    
+    u8bit_t header_data[HEADER_SIZE];
+
+    for (int i = 0; i < HEADER_SIZE; i++)
+    {
+        header_data[i] = 
+    }
 
     // TODO: Read samples from input file and write updated data to output file
 
