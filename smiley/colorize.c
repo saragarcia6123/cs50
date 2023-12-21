@@ -77,8 +77,19 @@ int main(int argc, char *argv[])
         fseek(inptr, padding, SEEK_CUR);
     }
 
-    //printf("%hhu", image[0][0].rgbtBlue);
-    colorize(height, width, image);
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            RGBTRIPLE current_pixel = image[j][i];
+            printf("%hhu", current_pixel.rgbtBlue);
+            if (current_pixel.rgbtBlue == 0)
+            {
+                current_pixel.rgbtBlue = 255;
+                current_pixel.rgbtRed = 255;
+            }
+        }
+    }
 
     // write outfile's BITMAPFILEHEADER
     fwrite(&bf, sizeof(BITMAPFILEHEADER), 1, outptr);
