@@ -36,11 +36,12 @@ int main(int argc, char *argv[])
     //Copy header from input file to output file
 
     u8int_t header[HEADER_SIZE];
-    fread()
+    fread(header, HEADER_SIZE, 1, input); //store 1 array of the first 44 bytes of data from input in header
+    fwrite(header, HEADER_SIZE, 1, output);
 
     //Read samples from input file and write updated data to output file
 
-    int16_t buffer;
+    int16_t buffer; //stores current byte
     while (fread(&buffer, sizeof(int16_t), 1, input))
     {
         buffer *= factor;
