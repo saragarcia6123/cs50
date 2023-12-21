@@ -77,6 +77,7 @@ int main(int argc, char *argv[])
         fseek(inptr, padding, SEEK_CUR);
     }
 
+    //printf("%hhu", image[0][0].rgbtBlue);
     colorize(height, width, image);
 
     // write outfile's BITMAPFILEHEADER
