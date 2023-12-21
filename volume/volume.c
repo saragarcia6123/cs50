@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 
     //Copy header from input file to output file
 
-    while (fread(&input, HEADER_SIZE, 1, input))
+    while (fread(&input, sizeof(uint8_t), 1, input))
     {
         fwrite(&input, HEADER_SIZE, 1, output);
     }
