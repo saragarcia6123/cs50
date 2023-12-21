@@ -1,6 +1,11 @@
 #include "helpers.h"
 #include <stdio.h>
 
+int main(void)
+{
+    
+}
+
 void colorize(int height, int width, RGBTRIPLE image[height][width])
 {
     printf("hi");
