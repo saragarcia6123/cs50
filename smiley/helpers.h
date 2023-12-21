@@ -8,7 +8,7 @@ void colorize(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < width; j++)
         {
             RGBTRIPLE current_pixel = image[j][i];
-            if (current_pixel == )
+            if (current_pixel.Blue == )
         }
     }
 }
