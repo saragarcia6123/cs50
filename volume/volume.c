@@ -38,12 +38,12 @@ int main(int argc, char *argv[])
     u8bit_t header_data[HEADER_SIZE] = fread(HEADER_SIZE);
     fwrite(header_data, output);
 
-    for (int i = 0; i < HEADER_SIZE; i++)
-    {
-        header_data[i] =
-    }
-
     // TODO: Read samples from input file and write updated data to output file
+
+    for (int i = HEADER_SIZE, i < input; i++)
+    {
+        
+    }
 
     // Close files
     fclose(input);
