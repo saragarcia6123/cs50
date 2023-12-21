@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
     fwrite(header, HEADER_SIZE, 1, output);
 
     //Read samples from input file and write updated data to output file
+    //fread has a pointer
 
     int16_t buffer; //stores the next 2 bytes to copy
     while (fread(&buffer, sizeof(int16_t), 1, input))
