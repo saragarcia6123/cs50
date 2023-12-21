@@ -42,9 +42,11 @@ int main(int argc, char *argv[])
 
     //Read samples from input file and write updated data to output file
 
-    for (int i = HEADER_SIZE, i < input; i++)
+    int16_t buffer;
+    while (fread(0, 0, 2, input))
     {
-        fwrite()
+        buffer *= factor;
+        fwrite(0, 0, 2, output);
     }
 
     // Close files
