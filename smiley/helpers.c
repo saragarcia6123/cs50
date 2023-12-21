@@ -8,10 +8,11 @@ void colorize(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < width; j++)
         {
             RGBTRIPLE current_pixel = image[j][i];
-            if (current_pixel.rgbtBlue == 0)
+            if (current_pixel.rgbtBlue == 0 && current_pixel.rgbtRed == 0 && current_pixel.rgbtGreen == 0)
             {
-                current_pixel.rgbtBlue = 255;
-                current_pixel.rgbtRed = 255;
+                (image[j][i]).rgbtRed = 255;
+                (image[j][i]).rgbtBlue = 155;
+                (image[j][i]).rgbtGreen = 45;
             }
         }
     }
