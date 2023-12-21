@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 
     //Copy header from input file to output file
 
-    u8int_t header[HEADER_SIZE];
+    uint8_t header[HEADER_SIZE];
     fread(header, HEADER_SIZE, 1, input); //store 1 array of the first 44 bytes of data from input in header
     fwrite(header, HEADER_SIZE, 1, output);
 
