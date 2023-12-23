@@ -2,9 +2,9 @@
 
 int main(void)
 {
-    int a = 128;
+    int a = 127;
     int* p = &a;
     char* p0;
     p0 = (char*)p;
-    printf("Value of a: %i, Address of a: %p\nValue of p: %d, Address of p: %p\nValue of p0: %d, Address of p0: %p\n", a, &a, *p, p, *p0, p0);
+    printf("Value of p: %d, Address of p: %p\nValue of p0: %d, Address of p0: %p\n", *p, p, *p0, p0);
 }
