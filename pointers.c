@@ -4,7 +4,7 @@ int main()
     int a = 1025;
     int *p;
     p = &a;
-    printf("a = %d, v = %d\n", p, *p);
+    printf("a = %i\n", a);
     char *p0;
     p0 = (char*)p;
 
