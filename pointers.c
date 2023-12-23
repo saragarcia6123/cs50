@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <ctype.h>
-
-int main(void)
+#include<stdio.h>
+int main()
 {
     int a = 1025;
     int *p;
