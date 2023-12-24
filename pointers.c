@@ -1,13 +1,22 @@
 #include <stdio.h>
 
-int main(int argc, char **argv)
+void moo(int a, int *b);
+
+int main()
 {
-    int quan = 10;
-    int price = 20;
+    int x;
+    int *y;
 
-    // using %d with printf()
-    printf("Price of %d notebooks is %d", quan,
-           quan * price);
+    x = 1;
+    y = &x;
 
-    return 0; 
+    printf("Address of x = %d, value of x = %d\n", &x, x);
+    printf("Address of y = &d, value of y = %d, value of *y = %d\n", &y, y, *y);
+    moo(9, y);
+}
+
+void moo(int a, int *b)
+{
+    printf("Address of a = %d, value of a = %d\n", &a, a);
+    printf("Address of b = %d, value of b = %d, value of *b = %d\n", &b, b, *b);
 }
